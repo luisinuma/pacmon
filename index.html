@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Matemático</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="start-screen" class="hidden">
+        <h1>Pac-Man Matemático</h1>
+        <button id="start-button">Comenzar Juego</button>
+    </div>
+    <div id="game-container" class="hidden">
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+        <div id="question-container">
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Tu respuesta">
+            <button id="submit">Enviar</button>
+        </div>
+        <button id="restart-button" class="hidden">Reiniciar Juego</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
